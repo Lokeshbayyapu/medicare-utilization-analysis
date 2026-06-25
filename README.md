@@ -31,33 +31,6 @@ Medicare spends over $4.24 Trillion across service types and geographies — yet
 
 ---
 
-## SQL Analysis Highlights
-
-### Query 1 — Top Countries by Healthcare Spending & Life Expectancy
-- Used GROUP BY and AVG aggregations to rank countries by average spending
-- Identified USA as highest spender at $4,388 average but with lowest efficiency score (17.28 life years per $1,000 spent)
-
-### Query 2 — Healthcare Spending Growth by Decade
-- Used CASE WHEN statements to segment data into decades (1970s-2020s)
-- Revealed all nations show dramatic spending growth post-1990 with USA leading at $6,623 recent average
-
-### Query 3 — Healthcare Efficiency Score Analysis
-- Built custom efficiency metric: Life Expectancy gained per $1,000 spent
-- Japan ranked most efficient (42.77) vs USA least efficient (17.28) despite highest spending
-
-### Query 4 — Historical vs Recent Spending Comparison
-- Used conditional aggregation with CASE WHEN to compare pre/post 1990 spending
-- USA showed largest spending increase of $5,426 — highest growth among all nations
-
-### Key SQL Techniques Used
-- GROUP BY with multiple aggregations
-- CASE WHEN for decade segmentation
-- Conditional aggregation for period comparison
-- Custom calculated efficiency metrics
-- ORDER BY for ranked analysis
-
----
-
 ## Data Quality Challenges
 - Resolved 103,855 missing Dual Eligible values using median imputation across beneficiary populations
 - Removed aggregated national totals (--ALL--) to enable accurate state-level analysis
@@ -70,7 +43,7 @@ Medicare spends over $4.24 Trillion across service types and geographies — yet
 | Layer | Tool |
 |---|---|
 | Data Processing | Python (pandas, numpy) |
-| Analysis | Python (Google Colab), SQL (SQLite) |
+| Analysis | Python (Google Colab) |
 | Visualization | Power BI, Tableau |
 | Data Source | CMS Market Saturation and Utilization Dataset (Public) |
 
