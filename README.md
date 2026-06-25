@@ -36,7 +36,7 @@ Medicare spends over $900B annually, yet reimbursement rates vary dramatically a
 - Geographic heat maps of cost variation
 - Top/bottom provider benchmarking by allowed amount per service
 
-**[View Tableau Dashboard](https://public.tableau.com/app/profile/lokesh.reddy2043/vizzes)**
+**[View Tableau Dashboard](https://public.tableau.com/app/profile/lokesh.reddy2043/viz/MedicareUtilizationAnalysis/Dashboard1)**
 
 ---
 
@@ -57,5 +57,3 @@ This analysis applies concepts central to *Medicare Advantage risk adjustment, *
 Built by *Lokesh Bayyapu*, PharmD, MS Health Data Science  
 Healthcare Data Analyst | Medicare Advantage & Population Health  
 [LinkedIn](https://www.linkedin.com/in/lokeshreddy1) | [Tableau Public](https://public.tableau.com/app/profile/lokesh.reddy2043/vizzes)
-
---
