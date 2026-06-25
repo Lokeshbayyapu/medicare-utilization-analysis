@@ -7,6 +7,7 @@ This project analyzes 558,852 Medicare records from the CMS Market Saturation an
 
 ---
 
+
 ## Why This Matters
 Medicare spends over $4.24 Trillion across service types and geographies — yet utilization rates and provider access vary dramatically across states, often without corresponding differences in care quality. Identifying high-cost, low-efficiency patterns is foundational to risk adjustment strategy, network optimization, and care management program design.
 
