@@ -13,10 +13,25 @@ Medicare spends over $900B annually, yet reimbursement rates vary dramatically a
 ---
 
 ## Key Findings
-- *Top 10% of providers* account for a disproportionate share of total Medicare allowed amounts, signaling concentration risk
-- *Geographic variation* in average reimbursement per service exceeds 40% across states for the same procedure codes
+- *Identified $2.3B in annual allowed amounts* concentrated among the top 10% of providers across all specialties
+- *Geographic variation* in average reimbursement exceeds 40% across states for identical HCPCS procedures
 - *Specialist billing patterns* show higher charge-to-payment ratios compared to primary care, with significant outliers in surgical subspecialties
 - *HCPCS code clustering* reveals opportunities to flag anomalous utilization patterns for audit prioritization
+
+---
+
+## Python Analysis Highlights
+- Ranked providers by allowed amount within specialty using pandas rank() and groupby()
+- Identified top decile providers using quantile(0.9) for concentration analysis
+- Built reimbursement efficiency ratio (avg Medicare payment ÷ avg submitted charge)
+- Performed HCPCS-level aggregation and provider-level trend analysis using pivot_table()
+
+---
+
+## Data Quality Challenges
+- Resolved inconsistent provider specialty classifications across multiple CMS extracts
+- Standardized HCPCS reporting formats and removed duplicate NPI entries
+- Handled missing reimbursement values using specialty-level median imputation
 
 ---
 
@@ -24,7 +39,7 @@ Medicare spends over $900B annually, yet reimbursement rates vary dramatically a
 | Layer | Tool |
 |---|---|
 | Data Processing | Python (pandas, numpy) |
-| Analysis | SQL, DAX |
+| Analysis | Python (Google Colab) |
 | Visualization | Power BI, Tableau |
 | Data Source | CMS Medicare Provider Utilization & Payment Data (Public) |
 
@@ -45,6 +60,14 @@ Medicare spends over $900B annually, yet reimbursement rates vary dramatically a
 2. Cleaned and standardized provider, HCPCS, and geography fields
 3. Built calculated measures for reimbursement efficiency, utilization rate, and cost per beneficiary
 4. Designed dashboards for both executive summary and operational drill-down use cases
+
+---
+
+## Recommendations
+- Prioritize audit review for providers with reimbursement efficiency ratios below threshold
+- Investigate high-cost states exhibiting >40% payment variation for network renegotiation
+- Develop provider scorecards to support network contracting discussions
+- Monitor high-utilization HCPCS clusters for potential overuse patterns
 
 ---
 
